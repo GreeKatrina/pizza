@@ -1,11 +1,10 @@
 class Pizza
-  attr_accessor :toppings, :pizza
+  attr_accessor :toppings
 
-  def initialize(toppings)
+  def initialize(toppings=[Topping.new('cheese')])
     @toppings = toppings
-    @pizza = []
-    @pizza << @toppings
   end
+
 end
 
 class Topping
