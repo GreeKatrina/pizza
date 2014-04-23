@@ -1,4 +1,11 @@
 class Pizza
+  attr_accessor :toppings, :pizza
+
+  def initialize(toppings)
+    @toppings = toppings
+    @pizza = []
+    @pizza << @toppings
+  end
 end
 
 class Topping
